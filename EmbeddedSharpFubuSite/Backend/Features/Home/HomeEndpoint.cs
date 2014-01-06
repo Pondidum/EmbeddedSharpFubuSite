@@ -2,14 +2,9 @@
 {
     public class HomeEndpoint
     {
-        public string get_test()
+        public HomeViewModel Index()
         {
-            return "Hi, I'm a test.";
-        }
-
-        public HomeViewModel get_index()
-        {
-            return new HomeViewModel();
+            return new HomeViewModel { Method = "Index" };
         }
     }
 }

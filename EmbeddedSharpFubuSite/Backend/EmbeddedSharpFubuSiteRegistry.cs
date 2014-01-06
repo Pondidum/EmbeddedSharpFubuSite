@@ -1,4 +1,5 @@
-﻿using FubuMVC.Core;
+﻿using EmbeddedSharpFubuSite.Backend.Features.Home;
+using FubuMVC.Core;
 using FubuMVC.Spark;
 
 namespace EmbeddedSharpFubuSite.Backend
@@ -9,7 +10,9 @@ namespace EmbeddedSharpFubuSite.Backend
         {
             Import<SparkEngine>();
 
-            Routes.IgnoreControllerNamespaceEntirely();
+            Routes
+                .IgnoreNamespaceText("EmbeddedSharpFubuSite.Backend.Features")
+                .IgnoreMethodsNamed("Index");
         }
     }
 }

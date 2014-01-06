@@ -1,4 +1,5 @@
 ﻿<viewdata model="EmbeddedSharpFubuSite.Backend.Features.Home.HomeViewModel" />
 
 <content:title>Test content</content:title>
-<h1>Hi, I'm an index.</h1>
+<h1>Index</h1>
+<p>Called by method: ${Model.Method}</p>
