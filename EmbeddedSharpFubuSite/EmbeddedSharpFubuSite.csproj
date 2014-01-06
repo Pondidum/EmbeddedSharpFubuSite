@@ -44,11 +44,26 @@
     <Reference Include="FubuMVC.Core">
       <HintPath>..\packages\FubuMVC.Core.1.2.0.1678\lib\net40\FubuMVC.Core.dll</HintPath>
     </Reference>
+    <Reference Include="FubuMVC.Core.Assets">
+      <HintPath>..\packages\FubuMVC.Core.Assets.0.9.9.560\lib\net40\FubuMVC.Core.Assets.dll</HintPath>
+    </Reference>
+    <Reference Include="FubuMVC.Core.UI">
+      <HintPath>..\packages\FubuMVC.Core.UI.1.0.1.611\lib\net40\FubuMVC.Core.UI.dll</HintPath>
+    </Reference>
     <Reference Include="FubuMVC.Core.View">
       <HintPath>..\packages\FubuMVC.Core.View.1.1.0.581\lib\net40\FubuMVC.Core.View.dll</HintPath>
     </Reference>
+    <Reference Include="FubuMVC.Diagnostics">
+      <HintPath>..\packages\FubuMVC.Diagnostics.0.9.8.358\lib\net40\FubuMVC.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="FubuMVC.JQueryUI">
+      <HintPath>..\packages\FubuMVC.JQueryUI.0.5.0.342\lib\net40\FubuMVC.JQueryUI.dll</HintPath>
+    </Reference>
     <Reference Include="FubuMVC.Katana">
       <HintPath>..\packages\FubuMVC.Katana.1.2.0.1678\lib\net40\FubuMVC.Katana.dll</HintPath>
+    </Reference>
+    <Reference Include="FubuMVC.Navigation">
+      <HintPath>..\packages\FubuMVC.Navigation.0.9.1.208\lib\net40\FubuMVC.Navigation.dll</HintPath>
     </Reference>
     <Reference Include="FubuMVC.OwinHost">
       <HintPath>..\packages\FubuMVC.OwinHost.1.2.0.1678\lib\net40\FubuMVC.OwinHost.dll</HintPath>
@@ -59,8 +74,12 @@
     <Reference Include="FubuMVC.StructureMap">
       <HintPath>..\packages\FubuMVC.StructureMap.1.2.0.1678\lib\net40\FubuMVC.StructureMap.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlTags">
-      <HintPath>..\packages\HtmlTags.1.1.0.119\lib\4.0\HtmlTags.dll</HintPath>
+    <Reference Include="FubuMVC.TwitterBootstrap">
+      <HintPath>..\packages\FubuMVC.TwitterBootstrap.0.0.0.644\lib\net40\FubuMVC.TwitterBootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlTags, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\HtmlTags.2.0.0.181\lib\4.0\HtmlTags.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin">
       <HintPath>..\packages\FubuMVC.Katana.1.2.0.1678\lib\net40\Microsoft.Owin.dll</HintPath>
