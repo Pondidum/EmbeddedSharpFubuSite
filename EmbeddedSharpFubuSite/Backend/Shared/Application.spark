@@ -1,0 +1,8 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title><use content="title" /></title>
+  <body>
+    <use:view />
+  </body>
+</html>

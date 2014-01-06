@@ -1,0 +1,4 @@
+﻿<viewdata model="EmbeddedSharpFubuSite.Backend.Features.Home.HomeViewModel" />
+
+<content:title>Test content</content:title>
+<h1>Hi, I'm an index.</h1>
