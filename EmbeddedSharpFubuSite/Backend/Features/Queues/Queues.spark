@@ -1,0 +1,8 @@
+﻿<viewdata model="EmbeddedSharpFubuSite.Backend.Features.Queues.QueuesViewModel" />
+
+<content:title>Queues</content:title>
+<h1>Active Queue Details</h1>
+<p>Some data</p>
+
+<h1>Idle Queue Details</h1>
+<p>Some data</p>
