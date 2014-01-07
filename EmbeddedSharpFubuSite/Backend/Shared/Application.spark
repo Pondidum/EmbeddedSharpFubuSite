@@ -1,8 +1,21 @@
-﻿<!DOCTYPE html>
+﻿<use namespace="FubuMVC.Core.Assets" />
+<use namespace="FubuMVC.TwitterBootstrap" />
+
+<!DOCTYPE html>
 <html>
-  <head>
-    <title><use content="title" /></title>
-  <body>
-    <use:view />
-  </body>
+	<head>
+		<title><use content="title" /></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		!{this.WriteAssetTags("twitterbootstrap")}
+	</head>
+	<body>
+		<!--<div id="diagnostic-menu" class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a href="#">Test</a>
+				</div>
+			</div>
+		</div>-->
+		<use:view />
+	</body>
 </html>
