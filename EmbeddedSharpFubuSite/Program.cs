@@ -1,5 +1,6 @@
 ﻿using System;
 using EmbeddedSharpFubuSite.Backend;
+using FubuMVC.Core.Packaging;
 using FubuMVC.Katana;
 
 namespace EmbeddedSharpFubuSite
@@ -8,9 +9,11 @@ namespace EmbeddedSharpFubuSite
     {
         private static void Main(string[] args)
         {
+            FubuMvcPackageFacility.PhysicalRootPath = @"Backend\";
 
-            using (var server = EmbeddedFubuMvcServer.For<SimpleApplication>())
+            using (var server = EmbeddedFubuMvcServer.For<SimpleApplication>(FubuMvcPackageFacility.PhysicalRootPath))
             {
+
                 Console.WriteLine("Some long running process, with a web-backend on :5500");
                 Console.ReadKey();
             }
