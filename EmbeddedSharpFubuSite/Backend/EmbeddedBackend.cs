@@ -3,7 +3,7 @@ using FubuMVC.StructureMap;
 
 namespace EmbeddedSharpFubuSite.Backend
 {
-    public class SimpleApplication : IApplicationSource
+    public class EmbeddedBackend : IApplicationSource
     {
         public FubuApplication BuildApplication()
         {

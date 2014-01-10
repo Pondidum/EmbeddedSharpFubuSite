@@ -11,7 +11,7 @@ namespace EmbeddedSharpFubuSite
         {
             FubuMvcPackageFacility.PhysicalRootPath = @"Backend\";
 
-            using (var server = EmbeddedFubuMvcServer.For<SimpleApplication>(FubuMvcPackageFacility.PhysicalRootPath))
+            using (var server = EmbeddedFubuMvcServer.For<EmbeddedBackend>(FubuMvcPackageFacility.PhysicalRootPath))
             {
 
                 Console.WriteLine("Some long running process, with a web-backend on :5500");
