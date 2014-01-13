@@ -114,6 +114,7 @@
     <Compile Include="Backend\Features\Home\HomeViewModel.cs" />
     <Compile Include="Backend\Features\Queues\QueuesEndpoint.cs" />
     <Compile Include="Backend\Features\Queues\QueuesViewModel.cs" />
+    <Compile Include="ServiceRegistry.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Backend\EmbeddedBackend.cs" />
@@ -136,6 +137,12 @@
     <None Include="Backend\content\styles\default.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SomeServiceCore\SomeServiceCore.csproj">
+      <Project>{9c04c3f8-65d4-4e15-9b20-4f3bbbf38235}</Project>
+      <Name>SomeServiceCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
