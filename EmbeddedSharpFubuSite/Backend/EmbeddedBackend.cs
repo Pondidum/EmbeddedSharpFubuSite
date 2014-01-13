@@ -1,5 +1,6 @@
 ﻿using FubuMVC.Core;
 using FubuMVC.StructureMap;
+using StructureMap;
 
 namespace EmbeddedSharpFubuSite.Backend
 {
@@ -7,7 +8,7 @@ namespace EmbeddedSharpFubuSite.Backend
     {
         public FubuApplication BuildApplication()
         {
-            return FubuApplication.For<EmbeddedSharpFubuSiteRegistry>().StructureMap();
+            return FubuApplication.For<EmbeddedSharpFubuSiteRegistry>().StructureMap<ServiceRegistry>();
         }
     }
 }

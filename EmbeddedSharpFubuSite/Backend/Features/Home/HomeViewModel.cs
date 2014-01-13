@@ -2,6 +2,6 @@
 {        
     public class HomeViewModel
     {
-        public string Method { get; set; }
+        public int Total { get; set; }
     }
 }

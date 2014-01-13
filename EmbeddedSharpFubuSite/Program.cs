@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 using EmbeddedSharpFubuSite.Backend;
 using FubuMVC.Core.Packaging;
 using FubuMVC.Katana;
+using SomeServiceCore;
+using StructureMap;
 
 namespace EmbeddedSharpFubuSite
 {
@@ -15,6 +18,12 @@ namespace EmbeddedSharpFubuSite
             {
 
                 Console.WriteLine("Some long running process, with a web-backend on :5500");
+
+                var p = server.Services.GetInstance<IProcessor>();
+                
+                var t = new Task(p.Start);
+                t.Start();
+
                 Console.ReadKey();
             }
         }

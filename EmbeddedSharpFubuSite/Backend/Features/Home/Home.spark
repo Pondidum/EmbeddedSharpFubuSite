@@ -1,5 +1,6 @@
 ﻿<viewdata model="EmbeddedSharpFubuSite.Backend.Features.Home.HomeViewModel" />
 
 <content:title>Test content</content:title>
+<content:sidebar>The system has processed ${Model.Total} batches so far.</content:sidebar>
 <h1>Index</h1>
-<p>Called by method: ${Model.Method}</p>
+
