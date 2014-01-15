@@ -1,8 +1,23 @@
 ﻿<viewdata model="EmbeddedSharpFubuSite.Backend.Features.Logs.LogsViewModel" />
 
-<content:title>Queues</content:title>
-<h1>Active Queue Details</h1>
-<p>Some data</p>
+<content:title>Logs</content:title>
+<a id="LogLink" href="#">Check Logs</a>
 
-<h1>Idle Queue Details</h1>
-<p>Some data</p>
+<script>
+  $(document).ready(function() {
+    $("#LogLink").click(function(e) {
+      e.preventDefault();
+      $.ajax({
+        type: "GET",
+        dataType: "json",
+        url: "logs/getlogs",
+        success: function(response) {
+          $("#LogLink").text("Win");
+        },
+        error: function(x, e) {
+          $("#LogLink").text("Fail");
+        },
+      });
+    })
+  })
+</script>

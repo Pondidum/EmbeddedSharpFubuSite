@@ -113,7 +113,9 @@
     <Compile Include="Backend\Features\Home\HomeEndpoint.cs" />
     <Compile Include="Backend\Features\Home\HomeViewModel.cs" />
     <Compile Include="Backend\Features\Logs\LogsEndpoint.cs" />
+    <Compile Include="Backend\Features\Logs\LogsJsonModel.cs" />
     <Compile Include="Backend\Features\Logs\LogsViewModel.cs" />
+    <Compile Include="Backend\Features\Logs\Pair.cs" />
     <Compile Include="Backend\Features\Queues\QueuesEndpoint.cs" />
     <Compile Include="Backend\Features\Queues\QueuesViewModel.cs" />
     <Compile Include="ServiceRegistry.cs" />
