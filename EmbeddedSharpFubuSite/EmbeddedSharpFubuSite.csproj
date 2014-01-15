@@ -112,6 +112,8 @@
     <Compile Include="Backend\EmbeddedSharpFubuSiteRegistry.cs" />
     <Compile Include="Backend\Features\Home\HomeEndpoint.cs" />
     <Compile Include="Backend\Features\Home\HomeViewModel.cs" />
+    <Compile Include="Backend\Features\Logs\LogsEndpoint.cs" />
+    <Compile Include="Backend\Features\Logs\LogsViewModel.cs" />
     <Compile Include="Backend\Features\Queues\QueuesEndpoint.cs" />
     <Compile Include="Backend\Features\Queues\QueuesViewModel.cs" />
     <Compile Include="ServiceRegistry.cs" />
@@ -122,6 +124,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Backend\Features\Home\Home.spark">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Backend\Features\Logs\Logs.spark">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Backend\Features\Queues\Queues.spark">
